@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "XMLDocument.h"
 
 @interface ViewController ()
 
@@ -22,6 +23,16 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)testXMLGenerator:(id)sender {
+    XMLNode *node = [[XMLNode alloc] initWithName:@"CategoryList" content:nil];
+    XMLDocument *document = [[XMLDocument alloc] initWithRootNode:node];
+    XMLNode *category = [node addChildWithName:@"Category" attributes:@{@"ID":@"01"}];
+    [category addChildWithName:@"MainCategory" content:@"XML"];
+    [category addChildWithName:@"Description" content:@"This is a list my XML articles"];
+    [category addChildWithName:@"Active" content:@"true"];
+    NSLog(@"%@", [document getXMLContent]);
 }
 
 @end

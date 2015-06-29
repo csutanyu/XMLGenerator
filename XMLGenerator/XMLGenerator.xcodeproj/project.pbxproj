@@ -15,6 +15,8 @@
 		6A9ABE7C1B402E5000FA596F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A9ABE7A1B402E5000FA596F /* LaunchScreen.xib */; };
 		6A9ABE881B402E5000FA596F /* XMLGeneratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9ABE871B402E5000FA596F /* XMLGeneratorTests.m */; };
 		6A9ABE941B4038C400FA596F /* XMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9ABE931B4038C400FA596F /* XMLNode.m */; };
+		EC6696551B40E18C00C16D93 /* XMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6696541B40E18C00C16D93 /* XMLDocument.m */; };
+		EC6696591B41320B00C16D93 /* NSString+XMLGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6696581B41320B00C16D93 /* NSString+XMLGenerator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,10 @@
 		6A9ABE871B402E5000FA596F /* XMLGeneratorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMLGeneratorTests.m; sourceTree = "<group>"; };
 		6A9ABE921B4038C400FA596F /* XMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLNode.h; sourceTree = "<group>"; };
 		6A9ABE931B4038C400FA596F /* XMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLNode.m; sourceTree = "<group>"; };
+		EC6696531B40E18C00C16D93 /* XMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDocument.h; sourceTree = "<group>"; };
+		EC6696541B40E18C00C16D93 /* XMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDocument.m; sourceTree = "<group>"; };
+		EC6696571B41320B00C16D93 /* NSString+XMLGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XMLGenerator.h"; sourceTree = "<group>"; };
+		EC6696581B41320B00C16D93 /* NSString+XMLGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XMLGenerator.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +134,10 @@
 			children = (
 				6A9ABE921B4038C400FA596F /* XMLNode.h */,
 				6A9ABE931B4038C400FA596F /* XMLNode.m */,
+				EC6696531B40E18C00C16D93 /* XMLDocument.h */,
+				EC6696541B40E18C00C16D93 /* XMLDocument.m */,
+				EC6696571B41320B00C16D93 /* NSString+XMLGenerator.h */,
+				EC6696581B41320B00C16D93 /* NSString+XMLGenerator.m */,
 			);
 			path = XMLGenerator;
 			sourceTree = "<group>";
@@ -234,8 +244,10 @@
 			files = (
 				6A9ABE741B402E5000FA596F /* ViewController.m in Sources */,
 				6A9ABE711B402E5000FA596F /* AppDelegate.m in Sources */,
+				EC6696551B40E18C00C16D93 /* XMLDocument.m in Sources */,
 				6A9ABE6E1B402E5000FA596F /* main.m in Sources */,
 				6A9ABE941B4038C400FA596F /* XMLNode.m in Sources */,
+				EC6696591B41320B00C16D93 /* NSString+XMLGenerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +442,7 @@
 				6A9ABE8D1B402E5000FA596F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A9ABE8E1B402E5000FA596F /* Build configuration list for PBXNativeTarget "XMLGeneratorTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +451,7 @@
 				6A9ABE901B402E5000FA596F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

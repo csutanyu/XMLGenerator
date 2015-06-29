@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "XMLNode.h"
+#import "XMLDocument.h"
 
 @interface AppDelegate ()
 
